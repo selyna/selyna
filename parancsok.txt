@@ -1,0 +1,9 @@
+fc > filename :::::::::::::: csinál új fáljt a névvel.
+
+git clone https://github.com/selyna/selyna.github.io ::::: kezdõ adat letöltése
+Get-Content parancsok.txt
+
+1.  git add xy.txt
+2.  git commit -m "semmi"
+3.  git push origin master
+
