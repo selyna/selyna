@@ -1,0 +1,8 @@
+fel -mit test.txt -meg "semmi"
+
+function fel($mit, $meg)
+{
+git add $mit
+git commit -m "$meg"
+git push origin master
+}
