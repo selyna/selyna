@@ -29,6 +29,15 @@ table#t01 th {
 <script type="text/javascript">
 function insertText () {
  
+  var xhr= new XMLHttpRequest();
+  xhr.open('GET', 'https://theunderminejournal.com/#eu/arathor/item/133680', true);
+  xhr.onreadystatechange= function() {
+    if (this.readyState!==4) return;
+    if (this.status!==200) return; // or whatever error handling you want
+    document.getElementById('bacon').innerHTML= this.responseText;
+  };
+  xhr.send();
+ 
  var bacon =  2;
  var ley = 2;
  var rune = 2;
@@ -171,6 +180,8 @@ function szamol(){
   </tr>
 </table>
 <button onclick="szamol()">Számolás</button>
+  
+<div id="bacon" style="overflow: auto; max-height: 400px;"></div>
 </center>
 </body>
 </html> 
