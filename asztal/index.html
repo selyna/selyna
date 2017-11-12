@@ -37,10 +37,7 @@ function insertText () {
  var lean = 2;
  var black = 2;
  var storm = 2;
- var str1 = 'The morning is upon us.';
- var str2 = str1.trim('morning', 3);
- 
- 
+
     document.getElementById('bacon').innerHTML = bacon;
     document.getElementById('ley').innerHTML = ley;
     document.getElementById('rune').innerHTML = rune;
@@ -59,7 +56,11 @@ function insertText () {
     document.getElementById('black2').innerHTML = black * 1.5;
     document.getElementById('storm2').innerHTML = storm * 1.5;
  
-     document.getElementById('test').innerHTML = str2;
+
+}
+function szamol(){
+    var b = document.getElementById("bacon3").value;
+    document.getElementById('summ').innerHTML = b; 
 }
 </script> 
 
@@ -77,6 +78,7 @@ function insertText () {
     <th>Aktuális Ár/asztal</th> 
     <th>Profit határ/db</th>
     <th>Profit határ/asztal</th>
+    <th>Maunális adatok</th>
   </tr>
   <tr>
     <td>&nbsp;<img src="http://wow.zamimg.com/images/wow/icons/tiny/inv_misc_food_legion_baconuncooked.gif"><a href="https://theunderminejournal.com/#eu/arathor/item/133680">[Slice of Bacon]</a></td>
@@ -85,6 +87,7 @@ function insertText () {
     <td id="bacon2"></td>
     <td>100</td>
     <td>300</td>
+    <td id="bacon3"></td>
   </tr>
   <tr>
     <td>&nbsp;<img src="http://wow.zamimg.com/images/wow/icons/tiny/inv_misc_food_legion_leyblood.gif"><a href="https://theunderminejournal.com/#eu/arathor/item/124120">[Leyblood]</a></td>
@@ -92,7 +95,8 @@ function insertText () {
     <td id="ley"></td>
     <td id="ley2"></td>
     <td>6</td>
-    <td>18</td>  
+    <td>18</td>
+    <td id="ley3"></td>
   </tr>
    <tr>
     <td>&nbsp;<img src="http://wow.zamimg.com/images/wow/icons/tiny/inv_fish_runescalekoigold.gif"><a href="https://theunderminejournal.com/#eu/arathor/item/124111">[Runescale Koi]</a></td>
@@ -101,6 +105,7 @@ function insertText () {
     <td id="rune2"></td>
     <td>7</td>
     <td>21</td>
+    <td id="rune3"></td>
   </tr>
   <tr>
     <td>&nbsp;<img src="http://wow.zamimg.com/images/wow/icons/tiny/inv_fish_highmountainsalmonred.gif"><a href="https://theunderminejournal.com/#eu/arathor/item/124109">[Highmountain Salmon]</a></td>
@@ -109,6 +114,7 @@ function insertText () {
     <td id="high2"></td>
     <td>10</td>
     <td>15</td>
+    <td id="high3"></td>   
   </tr>
    <tr>
     <td>&nbsp;<img src="http://wow.zamimg.com/images/wow/icons/tiny/inv_misc_food_legion_biggameyribs.gif"><a href="https://theunderminejournal.com/#eu/arathor/item/124119">[Big Gamy Ribs]</a></td>
@@ -117,6 +123,7 @@ function insertText () {
     <td id="big2"></td>
     <td>10</td>
     <td>15</td>
+    <td id="big3"></td>
   </tr>
    <tr>
     <td>&nbsp;<img src="http://wow.zamimg.com/images/wow/icons/tiny/inv_misc_food_legion_leanshank.gif"><a href="https://theunderminejournal.com/#eu/arathor/item/124117">[Lean Shank]</a></td>
@@ -125,6 +132,7 @@ function insertText () {
     <td id="lean2"></td>
     <td>3</td>
     <td>4.5</td>
+    <td id="lean3"></td>
   </tr>
    <tr>
     <td>&nbsp;<img src="http://wow.zamimg.com/images/wow/icons/tiny/inv_fish_blackbarracudablue.gif"><a href="https://theunderminejournal.com/#eu/arathor/item/124112">[Black Barracuda]</a></td>
@@ -133,6 +141,7 @@ function insertText () {
     <td id="black2"></td>
     <td>5</td>
     <td>7.5</td>
+    <td id="black3"></td>
   </tr>
     <tr>
     <td>&nbsp;<img src="http://wow.zamimg.com/images/wow/icons/tiny/inv_fish_stormraygreen.gif"><a href="https://theunderminejournal.com/#eu/arathor/item/124110">[Stormray]</a></td>
@@ -141,6 +150,7 @@ function insertText () {
     <td id="storm2"></td>
     <td>7</td>
     <td>10.5</td>
+    <td id="storm3"></td>
   </tr>
 <tr>
     <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9xnZGdiKI--IxhVpF62qEzXonm88ww0x1Nj-i3B-vsjwu6Tpb">&nbsp;Összesen:</td>
@@ -149,8 +159,10 @@ function insertText () {
     <td></td>
     <td></td>
     <td>1000</td>
+    <td id="summ">></td>
   </tr>
 </table>
+<button onclick="szamol()">Számolás</button>
 </center>
 </body>
 </html> 
