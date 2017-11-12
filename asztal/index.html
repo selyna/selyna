@@ -59,15 +59,16 @@ function insertText () {
 
 }
 function szamol(){
-    var b = document.getElementById("bacon3").value;
-     var c = document.getElementById("ley3").value;
-     var d = document.getElementById("rune3").value;    
- var e = document.getElementById("high3").value;
-     var f = document.getElementById("big3").value;
-     var g = document.getElementById("lean3").value;
-     var h = document.getElementById("black3").value;
-      var i = document.getElementById("storm3").value;
-    document.getElementById('summ').innerHTML = b+c+d+e+f+g+h+i; 
+    var b,c,d,e,f,g,h,k = 0;
+    b = document.getElementById("bacon3").value;
+    c = document.getElementById("ley3").value;
+    d = document.getElementById("rune3").value;    
+    e = document.getElementById("high3").value;
+    f = document.getElementById("big3").value;
+    g = document.getElementById("lean3").value;
+    h = document.getElementById("black3").value;
+    k = document.getElementById("storm3").value;
+    document.getElementById('summ').innerHTML = (b * 3) + (c * 3) + (d * 3) + (e * 1.5) + (f * 1.5) + (g  * 1.5)+ (h * 1.5) + (k * 1.5); 
 }
 </script> 
 
