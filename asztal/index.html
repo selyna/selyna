@@ -4,7 +4,7 @@
 <title>Lavish Suramar Feast</title>
  <style>
 table {
-   width="800px";
+   width="900px";
 }
 table, th, td {
     border: 1px solid black;
@@ -37,6 +37,9 @@ function insertText () {
  var lean = 2;
  var black = 2;
  var storm = 2;
+ var str1 = 'The morning is upon us.';
+ var str2 = str1.slice("The morning ");
+ 
  
     document.getElementById('bacon').innerHTML = bacon;
     document.getElementById('ley').innerHTML = ley;
@@ -55,6 +58,8 @@ function insertText () {
     document.getElementById('lean2').innerHTML = lean * 1.5;
     document.getElementById('black2').innerHTML = black * 1.5;
     document.getElementById('storm2').innerHTML = storm * 1.5;
+ 
+     document.getElementById('test').innerHTML = str2;
 }
 </script> 
 
@@ -140,7 +145,7 @@ function insertText () {
 <tr>
     <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9xnZGdiKI--IxhVpF62qEzXonm88ww0x1Nj-i3B-vsjwu6Tpb">&nbsp;Összesen:</td>
     <td>1 asztalhoz</td>
-    <td></td>
+    <td id="test"></td>
     <td></td>
     <td></td>
     <td>1000</td>
