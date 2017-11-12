@@ -25,23 +25,30 @@ table#t01 th {
     color: white;
 }
 </style>
+ 
+<script type="text/javascript">
+function insertText () {
+    document.getElementById('bacon').innerHTML = "XXX-100";
+}
+</script> 
+
 </head>
-<body>
+<body onload="insertText();">
 
 <h2><a href="https://theunderminejournal.com/#eu/arathor/item/133579">Lavish Suramar Feast</a></h2>
 <table id="t01">
   <tr>
     <th>Alapanyag</th>
     <th>Darab</th>
-    <th>Aktuális Ár</th> 
+    <th>Aktuális Ár/db</th> 
     <th>Aktuális Ár/asztal</th> 
-    <th>Profit határ</th>
+    <th>Profit határ/db</th>
     <th>Profit határ/asztal</th>
   </tr>
   <tr>
     <td><a href="https://theunderminejournal.com/#eu/arathor/item/133680">[Slice of Bacon]</a></td>
     <td>3</td>
-    <td></td>
+    <td id="bacon"></td>
     <td></td>
     <td>100</td>
     <td>300</td>
