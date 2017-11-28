@@ -6,3 +6,5 @@ git add $mit
 git commit -m "$meg"
 git push origin master
 }
+
+https://ncore.cc/torrents.php?action=download&id=1879446&key=ed5f813f80344e401095e3be870973c8
