@@ -6,3 +6,5 @@ git add $mit
 git commit -m "$meg"
 git push origin master
 }
+
+https://dereferer.me/?https://drive.google.com/file/d/0B03HrfsyWmn7LUlxUkNrYU03V0U/view?usp=sharing
